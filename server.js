@@ -91,5 +91,5 @@ app.post('/message', function(req, res) {
 });
 
 // whatsupdevelop.com 실행
-app.listen(80, function(){
+app.listen(3000, function(){
 });
