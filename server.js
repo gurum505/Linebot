@@ -12,14 +12,18 @@ var bodyParser = require('body-parser');
 var api_url = 'https://openapi.naver.com/v1/papago/n2mt';
 
 // Naver Auth Key
-var client_id = '86rKmat0DijccSxKa01P';
-var client_secret = 'rMapNjB8DP';
+//새로 발급받은 naver papago api id, pw 입력
+var client_id = 'xZMx34y7uru1v8lywZ2d';
+var client_secret = 'p6L7M7WsH9';
 
 // Parse Application JSON
 app.use(bodyParser.json());
 
 // Parse Application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true}));
+
+
+
 
 // Kakao Keyboard API
 app.get('/keyboard', function(req, res) {
@@ -59,15 +63,15 @@ app.post('/message', function(req, res) {
       // Message 잘 찍히는지 확인
       console.log(objBody.message.result.translatedText);
 
-      // Kakao Message API  
+      // Kakao Message API
       let massage = {
         "message": {
           // Naver API Translate 결과를 Kakao Message
-          "text": objBody.message.result.translatedText 
+          "text": objBody.message.result.translatedText
         },
       };
 
-      // Kakao Message API 전송 
+      // Kakao Message API 전송
       res.set({
         'content-type': 'application/json'
       }).send(JSON.stringify(massage));
