@@ -1,5 +1,18 @@
 const line = require('@line/bot-sdk');
 const express = require('express');
+//papago api
+var request = require('request');
+
+//번역 api_url
+var translate_api_url = 'https://openapi.naver.com/v1/papago/n2mt';
+
+//언어감지 api_url
+var languagedetect_api_url = 'https://openapi.naver.com/v1/papago/detectLangs'
+
+// Naver Auth Key
+//새로 발급받은 naver papago api id, pw 입력
+var client_id = 'xZMx34y7uru1v8lywZ2d';
+var client_secret = 'p6L7M7WsH9';
 
 // create LINE SDK config from env variables
 const config = {
@@ -32,6 +45,7 @@ function handleEvent(event) {
     // ignore non-text-message event
     return Promise.resolve(null);
   }
+
 
   // create a echoing text message
   const echo = { type: 'text', text: event.message.text };
