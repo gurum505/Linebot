@@ -45,14 +45,33 @@ function handleEvent(event) {
     // ignore non-text-message event
     return Promise.resolve(null);
   }
+  return new Promise(function(resolve, reject) {
+        // Naver Papago Translate
+        var options = {
+            url:  translate_api_url,
+            // 한국어(source : ko), 영어(target: en), 카톡에서 받는 메시지(text)
+            form: {'source':'ko', 'target':'en', 'text':event.message.text},
+            headers: {'X-Naver-Client-Id': client_id, 'X-Naver-Client-Secret': client_secret}
+        };
 
+        // Naver Post API
+        request.post(options, function(error, response, body){
+            // Translate API Sucess
+            if(!error && response.statusCode == 200){
+                // JSON
+                var objBody = JSON.parse(response.body);
+                // Message 잘 찍히는지 확인
 
-  // create a echoing text message
-  const echo = { type: 'text', text: event.message.text };
+                const result = { type: 'text', text: objBody.message.result.translatedText};
+                console.log(result.text);
+                client.replyMessage(event.replyToken,result).then(resolve).catch(reject);
+            }
+        });
+    });
+    // use reply API
+    //return client.replyMessage(event.replyToken,objBody.message.result.translatedText);
+  }
 
-  // use reply API
-  return client.replyMessage(event.replyToken, echo);
-}
 
 
 app.listen(3000, function () {
