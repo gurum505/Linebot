@@ -7,12 +7,17 @@ mother project : kakaoBot<br>
 # :page_with_curl:목차
 ---
 > 소개
-기본 세팅
-> >개발 환경
-> >사용 언어
+
+> 기본세팅
+> > 개발 환경
+> > 사용 언어
+
 > 빌드 방법
+
 > 사용 방법
-> >사용 API
+> > 사용 API
+
+> liscense
 
 # :speaker:소개
 ---
