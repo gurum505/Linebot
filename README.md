@@ -6,15 +6,18 @@ mother project : kakaoBot<br>
 
 # :page_with_curl:목차
 ---
-> 소개
+> 1.소개
 
-> 기본세팅
+> 2.기본세팅
+
 > > 개발 환경
+
 > > 사용 언어
 
-> 빌드 방법
+> 3.빌드 방법
 
-> 사용 방법
+> 4.사용 방법
+
 > > 사용 API
 
 > liscense
@@ -22,6 +25,14 @@ mother project : kakaoBot<br>
 # :speaker:소개
 ---
 
+# :bookmark:기본세팅
+---
+
+# :floppy_disk:빌드 방법
+---
+
+# :book:사용 방법
+---
 
 
 
