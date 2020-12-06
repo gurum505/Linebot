@@ -2,7 +2,6 @@ var express = require('express');
 var app = express();
 const line = require('@line/bot-sdk');
 
-
 //papago api
 var request = require('request');
 
@@ -66,7 +65,6 @@ function handleEvent(event) {
 
         //언어 감지가 제대로 됐는지 확인
         console.log(detect_body.langCode);
-
 
         //번역은 한국어->영어 / 영어->한국어만 지원
         if(detect_body.langCode == 'ko'||detect_body.langCode == 'en'){
