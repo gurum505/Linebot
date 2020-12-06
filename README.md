@@ -45,8 +45,10 @@ mother project : kakaoBot<br>
 
     1. npm install aws-sdk
     
-    2. aws configure
+    2. /home/user/ 안의 .aws/credentials 수정
     
+        ->aws session token key 입력
+        
         ->aws access key, secret key 입력
         
         ->region: us-east-1
