@@ -6,7 +6,6 @@ mother project : kakaoBot<br>
 
 # :page_with_curl:목차
 ---
-=======
 > 1.소개
 
 > > 사용 API
@@ -23,19 +22,21 @@ mother project : kakaoBot<br>
 
 # :speaker:소개
 `영어, 한글 등 여러 언어로 작성한 글에서 감성을 분석하는 서비스`
+![sentiment-analysis](/uploads/6f73885ed26a2de4928e83002a1b775e/sentiment-analysis.png)
+
 
 ---기존에 구현된 챗봇에 amazon comprehend api를 도입해 감성분석 기능을 추가한다.
 
    사용자가 text를 전송할 경우 text에서  major한 감정을 추출하여 reply한다.
    
----사용 API
+---`사용 API`
 
     1. aws comprehend api
     
     2. line notify,messenger api
 
 # :bookmark:기본세팅
----WHAT WE NEED: 
+---`WHAT WE NEED`: 
 
     line messanger api channel token
     
