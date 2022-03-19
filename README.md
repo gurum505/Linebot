@@ -1,7 +1,6 @@
 ## Mother Project
 ---
 mother project : kakaoBot<br>
-최근 수정: 2020/12/04<br>
 추가기능 : amazon comprehend api를 이용한 챗봇에 감성분석 기능 추가 
 
 # :page_with_curl:목차
