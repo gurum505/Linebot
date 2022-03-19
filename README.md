@@ -18,12 +18,8 @@ mother project : kakaoBot<br>
    
 > 4.사용 방법
 
-> liscense
-
 # :speaker:소개
 `영어, 한글 등 여러 언어로 작성한 글에서 감성을 분석하는 서비스`
-![sentiment-analysis](/uploads/6f73885ed26a2de4928e83002a1b775e/sentiment-analysis.png)
-
 
 ---기존에 구현된 챗봇에 amazon comprehend api를 도입해 감성분석 기능을 추가한다.
 
@@ -57,8 +53,7 @@ mother project : kakaoBot<br>
         ->region: us-east-1
 
 # :book:사용 방법
----(temp) 
-
+---
     1. send message
     
     2. it will return your sentiment
