@@ -23,6 +23,8 @@ mother project : kakaoBot<br>
 ---기존에 구현된 챗봇에 amazon comprehend api를 도입해 감성분석 기능을 추가한다.
 
    사용자가 text를 전송할 경우 text에서  major한 감정을 추출하여 reply한다.
+   ![image](https://user-images.githubusercontent.com/72953877/166104523-5536adfc-6244-4515-9632-afd7218d7a09.png)
+
    
 ---`사용 API`
 
