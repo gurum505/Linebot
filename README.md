@@ -60,4 +60,5 @@ mother project : kakaoBot<br>
     2. it will return your sentiment
 ---
 
+![캡처](https://user-images.githubusercontent.com/72953877/166104692-295db299-7f88-46ec-9b78-411d82797c53.PNG)
 
